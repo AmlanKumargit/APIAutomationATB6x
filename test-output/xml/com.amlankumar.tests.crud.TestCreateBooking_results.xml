@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="C:/Users/amlan/IdeaProjects/APIAutomationATB6x/src/test/java/com/amlankumar/tests/crud/TestCreateBooking.java"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="4.517">
+    <properties></properties>
+
+
+
+            <testcase
+                name="CreateBookingNegative"
+                time="1.196"
+                classname="com.amlankumar.tests.crud.TestCreateBooking">
+            </testcase>
+            <testcase
+                name="CreateBooking"
+                time="3.321"
+                classname="com.amlankumar.tests.crud.TestCreateBooking">
+            </testcase>
+</testsuite>
