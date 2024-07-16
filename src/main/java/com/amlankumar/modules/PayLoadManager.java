@@ -1,8 +1,6 @@
 package com.amlankumar.modules;
 
-import com.amlankumar.pojos.Booking;
-import com.amlankumar.pojos.BookingDates;
-import com.amlankumar.pojos.BookingResponse;
+import com.amlankumar.pojos.*;
 import com.google.gson.Gson;
 
 public class PayLoadManager {
@@ -58,5 +56,22 @@ public class PayLoadManager {
         BookingResponse br = gson.fromJson(responseString, BookingResponse.class);
         return br;
     }
+
+    public String SetAuthPayload(){
+        Auth auth = new Auth();
+        auth.setUsername("admin");
+        auth.setPassword("password123");
+        gson = new Gson();
+        String tokenPayloadString =gson.toJson(auth);
+        return tokenPayloadString;
+    }
+
+    public String GetTokenfromJson(String tokenresponse){
+        gson = new Gson();
+        TokenResponse tr = gson.fromJson(tokenresponse, TokenResponse.class);
+        return tr.getToken();
+
+    }
+
 
 }

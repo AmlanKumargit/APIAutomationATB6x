@@ -1,12 +1,13 @@
 package com.amlankumar.tests.integration.template;
 
 
+import base.BaseTest;
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TCintegration {
+public class TCintegration extends BaseTest {
 
 // Create, Verify, Update, Delete booking
     @Test(groups="integration", priority = 1)

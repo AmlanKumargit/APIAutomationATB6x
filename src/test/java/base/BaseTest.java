@@ -4,7 +4,9 @@ import com.amlankumar.actions.AssertActions;
 import com.amlankumar.endpoints.APIConstants;
 import com.amlankumar.modules.PayLoadManager;
 import com.beust.ah.A;
+import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
@@ -31,7 +33,20 @@ public class BaseTest {
         //We can also use requestspecification = RestAssured.given().baseuri().header(). whichever is convenient
 
     }
-    public String setToken(){ return null; }
+
+
+    public String getToken(){
+        requestspecification =
+                RestAssured.given().baseUri(APIConstants.BASE_URI).basePath(APIConstants.AUTH);
+        String payload = payloadmanager.SetAuthPayload();
+        response =  requestspecification.contentType(ContentType.JSON)
+                .body(payload).when().post();
+
+        //Extracting token via deserialization
+        String token = payloadmanager.GetTokenfromJson(response.asString());
+        return token;
+
+    }
 
 
 }
