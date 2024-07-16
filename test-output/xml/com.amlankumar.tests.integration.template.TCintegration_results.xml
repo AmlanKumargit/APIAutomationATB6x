@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TCintegration.java"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.137">
+    <properties></properties>
+
+
+
+            <testcase
+                name="testDeleteBooking"
+                time="0.005"
+                classname="com.amlankumar.tests.integration.template.TCintegration">
+            </testcase>
+            <testcase
+                name="testVerifyBooking"
+                time="0.003"
+                classname="com.amlankumar.tests.integration.template.TCintegration">
+            </testcase>
+            <testcase
+                name="testCreateBooking"
+                time="0.124"
+                classname="com.amlankumar.tests.integration.template.TCintegration">
+            </testcase>
+            <testcase
+                name="testUpdateBooking"
+                time="0.005"
+                classname="com.amlankumar.tests.integration.template.TCintegration">
+            </testcase>
+</testsuite>

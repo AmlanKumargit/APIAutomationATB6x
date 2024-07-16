@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="C:/Users/amlan/IdeaProjects/APIAutomationATB6x/src/test/java/com/amlankumar/tests/crud/TestCreateBooking.java"><classes><class name="com.amlankumar.tests.crud.TestCreateBooking">
-    <methods><include name="CreateBooking"/>
-        <include name="CreateBookingNegative"/>
-    </methods></class></classes></test></suite>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="TCintegration.java">
+        <classes><class name="com.amlankumar.tests.integration.template.TCintegration">
+            <methods>
+                <include name="testCreateBooking"/>
+                <include name="testVerifyBooking"/>
+                <include name="testUpdateBooking"/>
+                <include name="testDeleteBooking"/>
+            </methods>
+        </class></classes></test></suite>
