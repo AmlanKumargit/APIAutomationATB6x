@@ -56,6 +56,12 @@ public class PayLoadManager {
         BookingResponse br = gson.fromJson(responseString, BookingResponse.class);
         return br;
     }
+    public static Booking BookingResponseGET(String responseString){
+        gson = new Gson();
+        Booking br = gson.fromJson(responseString, Booking.class);
+        return br;
+    }
+
 
     public String SetAuthPayload(){
         Auth auth = new Auth();
