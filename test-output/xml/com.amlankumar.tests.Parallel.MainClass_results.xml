@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TCParallelFlow.java"
+           tests="5"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.751">
+    <properties></properties>
+
+
+
+            <testcase
+                name="TestMethod2"
+                time="0.150"
+                classname="com.amlankumar.tests.Parallel.MainClass">
+            </testcase>
+            <testcase
+                name="TestMethod3"
+                time="0.151"
+                classname="com.amlankumar.tests.Parallel.MainClass">
+            </testcase>
+            <testcase
+                name="TestMethod4"
+                time="0.150"
+                classname="com.amlankumar.tests.Parallel.MainClass">
+            </testcase>
+            <testcase
+                name="TestMethod5"
+                time="0.150"
+                classname="com.amlankumar.tests.Parallel.MainClass">
+            </testcase>
+            <testcase
+                name="TestMethod1"
+                time="0.150"
+                classname="com.amlankumar.tests.Parallel.MainClass">
+            </testcase>
+</testsuite>
