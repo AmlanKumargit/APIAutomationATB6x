@@ -4,29 +4,29 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="7.665">
+           time="8.744">
     <properties></properties>
 
 
 
             <testcase
-                name="testUpdateBooking"
-                time="1.113"
-                classname="com.amlankumar.tests.ExtentDemo.TCintegrationFlowExtent">
-            </testcase>
-            <testcase
                 name="testCreateBooking"
-                time="4.349"
-                classname="com.amlankumar.tests.ExtentDemo.TCintegrationFlowExtent">
-            </testcase>
-            <testcase
-                name="testVerifyBooking"
-                time="1.119"
+                time="5.345"
                 classname="com.amlankumar.tests.ExtentDemo.TCintegrationFlowExtent">
             </testcase>
             <testcase
                 name="testDeleteBooking"
-                time="1.084"
+                time="1.151"
+                classname="com.amlankumar.tests.ExtentDemo.TCintegrationFlowExtent">
+            </testcase>
+            <testcase
+                name="testVerifyBooking"
+                time="1.129"
+                classname="com.amlankumar.tests.ExtentDemo.TCintegrationFlowExtent">
+            </testcase>
+            <testcase
+                name="testUpdateBooking"
+                time="1.119"
                 classname="com.amlankumar.tests.ExtentDemo.TCintegrationFlowExtent">
             </testcase>
 </testsuite>
